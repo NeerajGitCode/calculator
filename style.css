@@ -8,28 +8,33 @@
 }
 
 body{
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    background: linear-gradient(45deg, #3f3e3e, #335078);
 }
 
 .calculator{
+   box-sizing: border-box;
+   overflow: auto;
+    height: 80vh;
+    width: 60vh;
     border: 1px solid #717377;
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 10px;
     background: transparent;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
 
 }
 
 input{
-    width: 320px;
+    margin: auto;
+    width: 100%;
     border: none;
-    padding: 24px;
-    margin: 10px;
+    border: 1px solid lightgray;
+    height: 2.5rem;
+    padding: 10px;
+    outline: none;
     background: transparent;
     box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
     font-size: 40px;
@@ -44,21 +49,25 @@ input::placeholder{
 
 button{
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     border-radius: 50%;
     background: transparent;
     color: #ffffff;
     font-size: 20px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
 .equalBtn{
-    background-color: #fb7c14;
+    background-color: black;
 }
 
 .operator{
-    color: #6dee0a;
+    color: black;
+}
+
+button:active {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
 }
